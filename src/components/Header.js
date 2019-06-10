@@ -3,7 +3,7 @@ import "../App.css"
 
 function Header(props){
 return(
-    <div className="header-component">Header</div>
+    <div className="header-component"></div>
 )
 }
 

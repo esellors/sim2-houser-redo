@@ -91,3 +91,22 @@ button{
   margin-left: 15%;
 
 }
+
+/* Step 3 */
+.S3-recommended-rent{
+  margin-bottom: 4vh;
+}
+
+.cancel{
+  background-color: #FEC2C2;
+}
+
+.step{
+  background-color: #3B5249;
+  color: white;
+}
+
+.complete{
+  background-color: #8AE892;
+ 
+}

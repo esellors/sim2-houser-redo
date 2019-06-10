@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
+import {Link, Redirect} from 'react-router-dom'
 
 class Step1 extends Component{
     
@@ -9,7 +9,9 @@ class Step1 extends Component{
             <div className="S1-component">
                 <div className="S1-title">
                     <div>Add New Listing</div>
-                    <button>Cancel</button>
+          
+                    <button onClick={()=> this.props.history.push(`/`)} className='cancel'>Cancel</button>
+                 
                 </div>
                 <div className="S1-inputs">
                 Property Name
@@ -26,7 +28,7 @@ class Step1 extends Component{
                   </div>
                 </div>
                 <div className="S1-next-button">
-                <Link to="/step2"><button >Next Step</button></Link>
+                <Link to="/step2"><button className='step' >Next Step</button></Link>
                 </div>
             </div>
         )
