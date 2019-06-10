@@ -9,7 +9,7 @@ class Step2 extends Component{
             <div className="S1-component">
             <div className="S1-title">
                 <div>Add New Listing</div>
-                <button>Cancel</button>
+                <button className='cancel' onClick={()=> this.props.history.push(`/`)}>Cancel</button>
             </div>
             <div className="S2-inputs">
             Image URL
@@ -17,8 +17,8 @@ class Step2 extends Component{
             
             </div>
             <div className="S2-next-button">
-            <Link to="/step1"><button >Previous Step</button></Link>
-            <Link to="/step3"><button >Next Step</button></Link>
+            <Link to="/step1"><button className='step' >Previous Step</button></Link>
+            <Link to="/step3"><button className='step' >Next Step</button></Link>
             </div>
         </div>
         )
