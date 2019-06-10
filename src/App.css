@@ -1,33 +1,93 @@
-.App {
-  text-align: center;
+.header-component{
+  background-color: #519872;
+  width: 100%;
+  height: 12vh;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Dashboard */
+.db-component{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 70%;
+  margin-left: 15%;
+  background-color: #E5F4EC;
+}
+.db-title{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
-.App-link {
-  color: #61dafb;
+.db-listings{
+  border-top: solid black 1px;
+  width: 100%;
+  padding-top: 2vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Step-1 */
+.S1-component{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 70%;
+margin-left: 15%;
+background-color: #E5F4EC;
+height: 90vh;
+
+}
+
+.S1-title{
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin-top: 2vh;
+  margin-bottom: 8vh;
+
+}
+
+.S1-inputs{
+  display: flex;
+flex-direction: column;
+}
+
+input{
+margin: 2vh;
+}
+
+.S1-next-button{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-right: 13%;
+  height: 30vh;
+  align-items: flex-end;
+}
+
+button{
+  height: 5vh;
+  width: 10vw;
+}
+
+/* Step 2 */
+
+.S2-inputs{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.S2-next-button{
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  margin-right: 13%;
+  height: 30vh;
+  align-items: flex-end;
+  margin-left: 15%;
+
 }
