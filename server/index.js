@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const massive = require("massive");
 let { SERVER_PORT } = process.env;
-let {createProperty} = require('./controller')
+let {createProperty, getProperties} = require('./controller')
 
 app.use(express.json());
 
@@ -14,6 +14,7 @@ massive(process.env.CONNECTION_STRING)
   })
 
 app.post('/api/property', createProperty )
+app.get('/api/properties', getProperties )
 
 
 app.listen(SERVER_PORT, () => {

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link, Redirect } from "react-router-dom";
 import axios from "axios"
+import store, {CLEAR_FORM} from "../redux/store"
 
 class Step3 extends Component {
   constructor(){
@@ -13,8 +14,11 @@ class Step3 extends Component {
 
   submitForm(){
     axios.post('/api/property', {string: 'post working'})
+    let action = {
+      type: CLEAR_FORM
+    }
  
-     
+     store.dispatch(action)
     
    
   }

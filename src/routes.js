@@ -8,6 +8,7 @@ import Step3 from "../src/components/Step3"
 
 export default (
     <Switch>
+
         <Route exact path="/" component={Dashboard}></Route>
         <Route  path="/step1" component={Step1}></Route>
         <Route  path="/step2" component={Step2}></Route>

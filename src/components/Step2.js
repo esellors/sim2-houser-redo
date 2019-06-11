@@ -1,8 +1,29 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
+import store, {ADD_IMG} from "../redux/store"
 
 class Step2 extends Component{
+   constructor(){
+       super()
+       this.state={
+        img: store.getState().img
+       }
+   }
+
+   componentDidMount(){
+       store.subscribe(()=>{
+           this.setState({img: store.getState().img})
+       })
+   }
     
+
+   handleImg(e){
+    let action = {
+        type: ADD_IMG,
+        payload: e.target.value
+    }
+    store.dispatch(action)
+   } 
     
     render(){
         return(
@@ -13,7 +34,7 @@ class Step2 extends Component{
             </div>
             <div className="S2-inputs">
             Image URL
-              <input></input>
+              <input onChange={this.handleImg} value={this.state.img}></input>
             
             </div>
             <div className="S2-next-button">
